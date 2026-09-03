@@ -1,40 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blog</title>
-        <style>
-            header{
-                background-color:#E8C6E7;
-                color: #2B3F57;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-            main{
-                background-color: #2B3F57;
-                color: #E8C6E7;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>blog da juju</h1>
-            <p>vou compartilhar conhecimentos sobre tecnologia e programação</p>
-        </header>
-        <main>
-            <img src="" alt="">
-            <h2>meu primeiro post</h2>
-            <p>por: juani silva </p>
-            <p>bem-vindos ao meu primeiro blog! aqui vou compartilhar dicas programação e curiosidades da área de tecnologia.</p>
-        </main>
-    </body>
-</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #9b9ae6;
+            color: #443d43;
+            text-align: center;
+            max-width: 830px;
+            margin: 0 auto;
+            border: 4px solid #3b373b;
+            padding: 16px;
+        }
+
+        main {
+            background-color: #d1d8fd;
+            color: #302a2f;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid #2c292c;
+            padding: 16px;
+        }
+
+        article {
+            display: flex;
+            gap: 16px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blog.da.ju</h1>
+        <p>vou compartilhar sobre minhas receitas de comida</p>
+    </header>
+
+    <main>
+        <article>
+            <img src="juani.jpeg"
+                alt="Ilustração minimalista e aesthetic sobre fundo suave em degradê rosa-claro e amarelo. No centro, traços finos na cor dourada representam uma mão delicada segurando uma flor, cercada por elementos como corações, estrelas, pontos e uma lua crescente.">
+            <div>
+                <h2>Meu Primeiro Post</h2>
+                <p class="artigo-autor">Por: juani silva</p>
+                <p>Oi, meninas! Sejam muito bem-vindas ao meu blog! aqui vou falar um pouco sobre minhas reiceitas de comida💕</p>
+                <button>❤️ <span>0</span></button>
+                <button>🤩 <span>0</span></button>
+                <button>😘 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="ju.jpg"
+                alt="Ilustração minimalista e aesthetic sobre fundo suave em degradê rosa-claro e amarelo. No centro, traços finos na cor dourada representam uma mão delicada segurando uma flor, cercada por elementos como corações, estrelas, pontos e uma lua crescente.">
+            <div>
+                <h2>Meu Segundo Post</h2>
+                <p class="artigo-autor">Por: juani silva</p>
+                <p>Oi meninas! Nas próximas postagens, vocês vão encontrar
+                    por aqui conteúdos como:receitas para festa, pro dia a dia e almoço em familia </p>
+                <button>❤️ <span>0</span></button>
+                <button>🤩 <span>0</span></button>
+                <button>😘 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+
+            botao.addEventListener("click", function () {
+                let texto = botao.querySelector("span");
+                let quantidade = parseInt(texto.textContent);
+
+                if (!curtiu) {
+                    texto.textContent = quantidade + 1;
+                    curtiu = true;
+                } else {
+                    texto.textContent = quantidade - 1;
+                    curtiu = false;
+                }
+            });
+        });
+    </script>
+</body>
+
+</htm

@@ -1,0 +1,70 @@
+style.css
+header {
+            background-color: #9b9ae6;
+            color: #443d43;
+            text-align: center;
+            max-width: 830px;
+            margin: 0 auto;
+            border: 4px solid #3b373b;
+            padding: 16px;
+        }
+
+        main {
+            background-color: #d1d8fd;
+            color: #302a2f;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid #2c292c;
+            padding: 16px;
+        }
+
+        article {
+            display: flex;
+            gap: 16px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        header {
+            background-color: #9b9ae6;
+            color: #443d43;
+            text-align: center;
+            max-width: 830px;
+            margin: 0 auto;
+            border: 4px solid #3b373b;
+            padding: 16px;
+        }
+
+        main {
+            background-color: #d1d8fd;
+            color: #302a2f;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid #2c292c;
+            padding: 16px;
+        }
+
+        article {
+            display: flex;
+            gap: 16px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        button {
+            cursor: pointer;
+        }
